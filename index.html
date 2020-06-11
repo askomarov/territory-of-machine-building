@@ -1,1 +1,528 @@
-<!DOCTYPE html><html lang="ru"><head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">   <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap" rel="stylesheet">   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>   <link rel="stylesheet" href="css/style.min.css">   <title>Технология машиностроения</title></head><body>   <div class="wrapper">      <header>   <div class="header">      <div class="header__imghand">         <!-- <picture><source srcset="img/imghand.webp" type="image/webp"><img src="img/imghand.png" alt="рука" /></picture> -->      </div>      <div class="header__bgimage">         <div class="header__bglinear">            <!-- добавить сюда  container-->            <div class="header__container">               <div class="header__main container">                  <a href="" class="header__logo"><picture><source srcset="img/logo.svg" type="image/webp"><img src="img/logo.svg" alt="логотип" /></picture></a>                  <!-- меню соц.сети -->                  <div class="header__social-menu social-menu">                     <ul class="social-menu__menu">                        <li class="social-menu__list">                           <a href="#" class="social-menu__link"><picture><source srcset="img/socialLogo1.svg" type="image/webp"><img src="img/socialLogo1.svg" alt="vklogo" /></picture></a>                        </li>                        <li class="social-menu__list">                           <a href="#" class="social-menu__link"><picture><source srcset="img/socialLogo2.svg" type="image/webp"><img src="img/socialLogo2.svg" alt="vflogo" /></picture></a>                        </li>                        <li class="social-menu__list">                           <a href="#" class="social-menu__link"><picture><source srcset="img/socialLogo3.svg" type="image/webp"><img src="img/socialLogo3.svg" alt="inslogo" /></picture></a>                        </li>                        <li class="social-menu__list">                           <a href="#" class="social-menu__link"><picture><source srcset="img/socialLogo4.svg" type="image/webp"><img src="img/socialLogo4.svg" alt="youlogo" /></picture></a>                        </li>                     </ul>                  </div>                  <!-- главное меню -->                  <div class="header__menu menu">                     <nav class="menu__body">                        <ul class="menu__list">                           <li><a href="#" class="menu__link">Главная</a></li>                           <li><a href="#" class="menu__link">Новости</a></li>                           <li><a href="#" class="menu__link">Исследования</a></li>                           <li><a href="#" class="menu__link">Аналитика</a></li>                        </ul>                     </nav>                  </div>                  <!-- меню юзер -->                  <div class="header__actions actions-header">                     <div class="actions-header__logo">                        <picture><source srcset="img/mainHeaderLogo1.webp" type="image/webp"><img src="img/mainHeaderLogo1.png" alt="логоюзер" /></picture>                     </div>                     <a href="#" class="actions-header__name">Валерия Шпак</a>                     <span class="submenu__arrow actions-header__arrow arrow"></span>                     <ul class="actions-header__submenu">                        <li><a href="#" class="actions-header__link">Мои статьи</a></li>                        <li><a href="#" class="actions-header__link">Моя страница</a></li>                        <li><a href="#" class="actions-header__link"><span>Выход</span></a></li>                     </ul>                  </div>               </div>            </div>         </div>      </div>   </div></header>      <main class="page">               </main>      <script src="js/script.js"></script>   </div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>технологии машиностроения askomarov</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container-fluid header__bgimg">
+				<div class="header__backgroud"></div>
+				<div class="header__img">
+					<img class="first-img" src="img/mainfoto.png" alt="синий" />
+					<!-- <img class="second-img" src="img/рука.png" alt="рука деталь" /> -->
+				</div>
+			</div>
+			<div class="container">
+				<div class="header-main">
+					<nav class="navbar navbar-expand-lg">
+						<div class="row navbar__content">
+							<!-- логотипа -->
+							<a class="navbar-brand" href="#"><img src="img/logo.svg" alt="логотип" /></a>
+							
+							<!-- соц меню -->
+							<ul class="header__social-menu">
+								<li class="social-item">
+									<a class="social-link" href="#"><img src="img/socialLogo1.svg" alt="vk ссылка" /></a>
+								</li>
+								<li class="social-item">
+									<a class="social-link" href="#"><img src="img/socialLogo2.svg" alt="vk ссылка" /></a>
+								</li>
+								<li class="social-item">
+									<a class="social-link" href="#"><img src="img/socialLogo3.svg" alt="vk ссылка" /></a>
+								</li>
+								<li class="social-item">
+									<a class="social-link" href="#"><img src="img/socialLogo4.svg" alt="vk ссылка" /></a>
+								</li>
+							</ul>
+							<!-- главное меню -->
+							<div class="header__main-menu collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="header__main-list navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link" href="#">Главная</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#popup">Новости</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Исследования</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Аналитика</a>
+									</li>
+								</ul>
+							</div>
+							<!-- меню пользователя -->
+							<div class="header-user">
+								<div class="header-user__image">
+									<img src="img/userlogo.jpg" alt="user logo" />
+								</div>
+
+								<ul class="header-user__menu">
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Валерия Шпак
+										</a>
+										<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="#">Мои статьи</a>
+											<a class="dropdown-item" href="#">Моя страница</a>
+											<a class="dropdown-item" href="#"><span>Выход</span></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- бургер -->
+							<button class="navbar-toggler order-3" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+						</div>
+					</nav>
+
+				</div>
+
+				<div class="header-second">
+					<div class="header-second__user">
+						<div class="header-second__image">
+							<img src="img/mainHeaderLogo2.png" alt="author logo" />
+						</div>
+						<span class="header-second__name">Аркадий Черёмушкин</span>
+					</div>
+					<div class="header-second__title">
+						<h1 class="header-second__h1">Как проводят кабеля на дне океана</h1>
+						<div class="header-second__info">
+							<span class="header-second__date">СЕГОДНЯ, 11:21
+							</span><span class="header-second__read-time">Читать 5 минут
+							</span><span class="header-second__comment"><svg width="13" height="16" viewBox="0 0 13 16"
+									fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.2127 0H1.78726C0.801788 0 0 0.804294 0 1.7932V7.58056C0 8.56724 0.798297 9.37026 1.78091 9.37377V12L5.54261 9.37377H11.2127C12.1982 9.37377 13 8.56931 13 7.58056V1.7932C13 0.804294 12.1982 0 11.2127 0ZM12.2383 7.58056C12.2383 8.14786 11.7782 8.60952 11.2127 8.60952H5.30363L2.54263 10.5372V8.60952H1.78726C1.22177 8.60952 0.761719 8.14786 0.761719 7.58056V1.7932C0.761719 1.22575 1.22177 0.76425 1.78726 0.76425H11.2127C11.7782 0.76425 12.2383 1.22575 12.2383 1.7932V7.58056Z"
+										fill="white" />
+									<path d="M3.47939 2.70043H9.52061V3.46468H3.47939V2.70043Z" fill="white" />
+									<path d="M3.47939 4.33083H9.52061V5.09508H3.47939V4.33083Z" fill="white" />
+									<path d="M3.47939 5.96123H9.52061V6.72548H3.47939V5.96123Z" fill="white" />
+								</svg> 6
+							</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<section class="main-page">
+			<div class="container">
+				<div class="row">
+					<!-- левый сайд бар -->
+					<div class="col-1 main-page__sidebar sidebar">
+						<nav class="sidebar__list nav flex-column">
+							<a class="sidebar__link link-fb" href="#">fb</a>
+							<a class="sidebar__link link-tw" href="#">tw</a>
+							<a class="sidebar__link link-mail" href="#">ma</a>
+							<a class="sidebar__link link-vk" href="#">vk</a>
+						</nav>
+					</div>
+					<!-- контент -->
+					<div class="col-sm-11 col-md-8 main-page__body">
+						<nav aria-label="breadcrumb">
+							<ol class="main-page__breadcrumb breadcrumb">
+								<li class="breadcrumb-item"><a href="#"><svg width="14" height="14" viewBox="0 0 14 14"
+											fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M13.8246 6.83065C14.0784 6.54235 14.0539 6.10046 13.7699 5.84393L7.51311 0.188924C7.22911 -0.0676072 6.7738 -0.0622334 6.49578 0.201039L0.21774 6.14543C-0.0602765 6.4087 -0.0739217 6.85002 0.187528 7.13074L0.344928 7.30006C0.606059 7.58077 1.02815 7.61424 1.28709 7.37459L1.75627 6.94058V13.2946C1.75627 13.6844 2.06208 14 2.43922 14H4.88642C5.26356 14 5.56937 13.6844 5.56937 13.2946V8.84934H8.6908V13.2946C8.68536 13.6841 8.95521 13.9997 9.33235 13.9997H11.9258C12.3029 13.9997 12.6087 13.6841 12.6087 13.2943V7.03005C12.6087 7.03005 12.7383 7.14733 12.8982 7.29247C13.0578 7.43733 13.393 7.32118 13.6468 7.03259L13.8246 6.83065Z"
+												fill="#1F2123" />
+										</svg>
+									</a></li>
+								<li class="breadcrumb-item"><a href="#">Подкатегория</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Технологии</li>
+							</ol>
+						</nav>
+						<div class="main-page__content">
+							<p class="main-page__text">В своём стремлении повысить качество жизни, они забывают, что реализация
+								намеченных плановых
+								заданий обеспечивает актуальность как самодостаточных, так и внешне зависимых концептуальных
+								решений.
+							</p><br>
+							<p class="main-page__text">Равным образом, постоянный количественный рост и сфера нашей активности
+								обеспечивает
+								актуальность стандартных подходов. С другой стороны, перспективное планирование способствует
+								повышению качества распределения внутренних резервов и ресурсов. Представители современных
+								социальных резервов являются только методом политического участия и превращены в посмешище, хотя
+								само их существование приносит несомненную пользу обществу. В частности, экономическая повестка
+								сегодняшнего дня говорит о возможностях укрепления моральных ценностей.</p>
+							<br>
+							<h2 class="main-page__h2">Подзаголовок статьи</h2><br>
+							<p class="main-page__text">В своём стремлении повысить качество жизни, они забывают, что реализация
+								намеченных плановых
+								заданий обеспечивает актуальность как самодостаточных, так и внешне зависимых концептуальных
+								решений.
+							</p><br>
+							<p class="main-page__text">Равным образом, постоянный количественный рост и сфера нашей активности
+								обеспечивает
+								актуальность стандартных подходов. С другой стороны, перспективное планирование способствует
+								повышению качества распределения внутренних резервов и ресурсов. Представители современных
+								социальных резервов являются только методом политического участия и превращены в посмешище, хотя
+								само их существование приносит несомненную пользу обществу. В частности, экономическая повестка
+								сегодняшнего дня говорит о возможностях укрепления моральных ценностей.
+							</p>
+							<div class="main-page__image">
+								<img src="img/mainimage1.jpg" alt="картинка контента 1" />
+							</div>
+							<blockquote class="main-page__blockquote blockquote">
+								<p class="blockquote__text">Равным образом, разбавленное изрядной долей эмпатии, рациональное
+									мышление выявляет срочную потребность благоприятных перспектив.</p>
+								<span class="blockquote__author">Виктор Дробыш</span>
+							</blockquote>
+							<h2 class="main-page__h2">еще Подзаголовок</h2><br>
+							<p class="main-page__text">В своём стремлении повысить качество жизни, они забывают, что реализация
+								намеченных плановых
+								заданий обеспечивает актуальность как самодостаточных, так и внешне зависимых концептуальных
+								решений.
+							</p><br>
+							<p class="main-page__text">Равным образом, постоянный количественный рост и сфера нашей активности
+								обеспечивает
+								актуальность стандартных подходов. С другой стороны, перспективное планирование способствует
+								повышению качества распределения внутренних резервов и ресурсов. Представители современных
+								социальных резервов являются только методом политического участия и превращены в посмешище, хотя
+								само их существование приносит несомненную пользу обществу. В частности, экономическая повестка
+								сегодняшнего дня говорит о возможностях укрепления моральных ценностей.
+							</p>
+							<div class="main-page__images">
+								<div>
+									<img src="img/mainimage2.jpg" alt="картинка контента 2" />
+								</div>
+								<div>
+									<img src="img/mainimage3.jpg" alt="картинка контента 3" />
+								</div>
+							</div>
+
+							<p class="main-page__text">С другой стороны, перспективное планирование способствует повышению
+								качества распределения внутренних резервов и ресурсов. Представители современных социальных
+								резервов являются только методом политического участия и превращены в посмешище, хотя само их
+								существование приносит несомненную пользу обществу. В частности, экономическая повестка
+								сегодняшнего дня говорит о возможностях укрепления моральных ценностей.
+							</p>
+							<div class="tags">
+								<div class="tags__name">теги:</div>
+								<ul class="tags__nav nav">
+									<li class="nav-item">
+										<a class="nav-link" href="#">Технологии</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Будущее</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Категория</a>
+									</li>
+								</ul>
+							</div>
+							<div class="download">
+								<div class="download__body">
+									<div class="download__item"><a class="download__link" href="#" download><img
+												src="img/filelogo.jpg" alt="">
+											<p>Текстовый файл.docx</p>
+										</a></div>
+									<div class="download__item"><a class="download__link" href="#" download><img
+												src="img/filelogo.jpg" alt="">
+											<p>Текстовый файл ещё один, тоже важный.docx</p>
+										</a>
+									</div>
+									<div class="download__item"><a class="download__link" href="#" download><img
+												src="img/filelogo.jpg" alt="">
+											<p>Очень важный документ.pdf</p>
+										</a></div>
+								</div>
+							</div>
+
+
+
+
+
+						</div>
+					</div>
+					<!-- правый сайдбар -->
+					<div class="col-10 col-md-3 main-page__top-news top-news">
+						<div class="top-news__body">
+							<div class="top-news__title">Топ статей автора</div>
+							<div class="top-news__images">
+								<img src="img/news1.jpg" alt="" />
+							</div>
+							<div class="top-news__text">
+								Высокое качество жизни для всех
+							</div>
+							<nav aria-label="top-news__crumb breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Технологии</a></li>
+									<li class="breadcrumb-item active">25 марта 2020</li>
+								</ol>
+							</nav>
+						</div>
+						<div class="top-news__articles articles">
+							<div class="articles__item">
+								<div class="articles__image">
+									<img src="img/news2.jpg" alt="" />
+								</div>
+								<div class="articles__title">
+									Являясь всего лишь частью
+								</div>
+								<nav aria-label="articles__crumb breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="#">Категория</a></li>
+										<li class="breadcrumb-item active">1 марта 2020</li>
+									</ol>
+								</nav>
+							</div>
+							<div class="articles__item">
+								<div class="articles__image">
+									<img src="img/news3.jpg" alt="" />
+								</div>
+								<div class="articles__title">
+									Являясь всего лишь частью
+								</div>
+								<nav aria-label="articles__crumb breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="#">Категория</a></li>
+										<li class="breadcrumb-item active">1 марта 2020</li>
+									</ol>
+								</nav>
+							</div>
+							<div class="articles__item">
+								<div class="articles__image">
+									<img src="img/news4.jpg" alt="" />
+								</div>
+								<div class="articles__title">
+									Являясь всего лишь частью
+								</div>
+								<nav aria-label="articles__crumb breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="#">Категория</a></li>
+										<li class="breadcrumb-item active">1 марта 2020</li>
+									</ol>
+								</nav>
+							</div>
+							<div class="articles__item">
+								<div class="articles__image">
+									<img src="img/news5.jpg" alt="" />
+								</div>
+								<div class="articles__title">
+									Являясь всего лишь частью
+								</div>
+								<nav aria-label="articles__crumb breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="#">Категория</a></li>
+										<li class="breadcrumb-item active">1 марта 2020</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="author">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-8 offset-1">
+							<div class="author__content comment">
+								<div class="comment__image">
+									<img src="img/authorlogo1.jpg" alt="author logo" />
+								</div>
+								<div class="comment__body">
+									<div class="comment__name">Аркадий Черёмушкин</div>
+									<p class="comment__text">Таким образом, начало повседневной работы по формированию позиции
+										не
+										оставляет шанса для переосмысления внешнеэкономических политик. С учётом сложившейся
+										международной обстановки, начало повседневной работы понешнеэкономических политик..</p>
+									<a href="#" class="comment__link"><span>Еще посты автора</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-8 offset-1">
+						<div class="row author__articles articles-author">
+							<a href="#" class="col-6 articles-author__link link-left">
+								<div class="articles-author__image">
+									<img src="img/news2.jpg" alt="">
+								</div>
+								<div class="articles-author__body">
+									<div class="articles-author__arrow"><svg width="20" height="10" viewBox="0 0 20 10"
+											fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M19.2188 4.19355H2.67353L5.41431 1.37806C5.72013 1.06387 5.7213 0.553264 5.41693 0.237578C5.11255 -0.0781481 4.61786 -0.0793172 4.31204 0.234836L0.229858 4.42839C0.229585 4.42863 0.22939 4.42891 0.229155 4.42915C-0.0758836 4.74335 -0.0768601 5.25561 0.229077 5.57085C0.229351 5.57109 0.229546 5.57137 0.22978 5.57161L4.31196 9.76516C4.61775 10.0793 5.11243 10.0782 5.41685 9.76242C5.72122 9.44674 5.72005 8.93613 5.41423 8.62194L2.67353 5.80645H19.2188C19.6502 5.80645 20 5.4454 20 5C20 4.5546 19.6502 4.19355 19.2188 4.19355Z" />
+										</svg>
+									</div>
+									<div class="articles-author__text">Предыдущий пост:</div>
+									<div class="articles-author__title">Представители современных социальных резервов</div>
+								</div>
+							</a>
+							<a href="#" class="col-6 articles-author__link link-right">
+								<div class="articles-author__image">
+									<img src="img/сomimg1.jpg" alt="">
+								</div>
+								<div class="articles-author__body">
+									<div class="articles-author__arrow"><svg width="20" height="10" viewBox="0 0 20 10"
+											fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.781248 4.19355H17.3265L14.5857 1.37806C14.2799 1.06387 14.2787 0.553264 14.5831 0.237578C14.8874 -0.0781481 15.3821 -0.0793172 15.688 0.234836L19.7701 4.42839C19.7704 4.42863 19.7706 4.42891 19.7708 4.42915C20.0759 4.74335 20.0769 5.25561 19.7709 5.57085C19.7706 5.57109 19.7705 5.57137 19.7702 5.57161L15.688 9.76516C15.3823 10.0793 14.8876 10.0782 14.5832 9.76242C14.2788 9.44674 14.2799 8.93613 14.5858 8.62194L17.3265 5.80645H0.781248C0.349764 5.80645 0 5.4454 0 5C0 4.5546 0.349764 4.19355 0.781248 4.19355Z" />
+										</svg>
+									</div>
+									<div class="articles-author__text">Следующий пост:</div>
+									<div class="articles-author__title">Может, с другой стороны перспективное</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="row block-comment">
+							<div class="block-comment__head">
+								<div class="block-comment__quantity">
+									<span>6</span> комментариев
+								</div>
+								<button type="button" class="btn btn-primary btn-lg block-comment__btn">Оставить
+									комментарий</button>
+							</div>
+							<div class="block-comment__body">
+								<div class="author__content comment">
+									<div class="comment__image">
+										<img src="img/userlogo1.jpg" alt="author logo" />
+									</div>
+									<div class="comment__body">
+										<div class="comment__name">Семён Петров</div>
+										<div class='comment__like like-active'>
+											<button class='like-toggle basic2'></button><span class='comment__quantity'>1</span>
+										</div>
+										<div class="comment__date"><span>25 марта 2020, 19:45</span></div>
+										<div class="comment__text">С другой стороны, перспективное планирование способствует
+											повышению качества распределения внутренних резервов и ресурсов. Представители
+											современных социальных резервов являются только методом политического участия и
+											превращены в посмешище</div>
+										<a href="#" class="comment__link"><span>ответить</span></a>
+									</div>
+								</div>
+								<div class="author__content comment">
+									<div class="comment__image">
+										<img src="img/authorlogo1.jpg" alt="author logo" />
+									</div>
+									<div class="comment__body">
+										<div class="comment__name">Аркадий Черёмушкин</div>
+										<div class="comment__like like-active">
+											<button class="like-toggle basic2"></button><span class="comment__quantity">1</span>
+										</div>
+										<div class="comment__date"><span>25 марта 2020, 19:45</span></div>
+										<div class="comment__text">С другой стороны, перспективное планирование способствует
+											повышению качества распределения внутренних резервов и ресурсов. Представители
+											современных социальных резервов являются только методом.</div>
+										<a href="#" class="comment__link"><span>ответить</span></a>
+									</div>
+								</div>
+								<div class="author__content comment answer">
+									<div class="comment__image">
+										<img src="img/userlogo3.jpg" alt="author logo" />
+									</div>
+									<div class="comment__body">
+										<div class="comment__name">Сергей Долин</div>
+										<div class='comment__like'>
+											<button class='like-toggle basic2'></button><span class='comment__quantity'>0</span>
+										</div>
+										<div class="comment__date"><span>25 марта 2020, 19:45</span></div>
+										<div class="comment__text">Представители современных социальных резервов являются только
+											вот эти.</div>
+										<a href="#" class="comment__link"><span>ответить</span></a>
+									</div>
+								</div>
+								<div class="author__content comment">
+									<div class="comment__image">
+										<img src="img/userlogo4.jpg" alt="author logo" />
+									</div>
+									<div class="comment__body">
+										<div class="comment__name">Валерия Лень</div>
+										<div class='comment__like'>
+											<button class='like-toggle basic2'></button><span class='comment__quantity'>0</span>
+										</div>
+										<div class="comment__date"><span>25 марта 2020, 19:45</span></div>
+										<div class="comment__text">Представители современных социальных резервов являются только
+											методом политического участия и превращены в посмешище...</div>
+										<a href="#" class="comment__link"><span>ответить</span></a>
+									</div>
+								</div>
+								<div class="block-comment__loadmore">
+									<a href="#">Загрузить ещё</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer container-fluid">
+			<div class="container">
+
+				<nav class="row footer__nav">
+					<!-- логотипа -->
+					<a class="navbar-brand" href="#"><img src="img/logo.svg" alt="логотип" /></a>
+					<!-- главное меню -->
+					<div class="footer__menu col-5">
+						<ul class="footer__menu-list navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Главная</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Новости</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Исследования</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Аналитика</a>
+							</li>
+						</ul>
+					</div>
+					<!-- соц меню -->
+					<ul class="footer__social-menu col-2">
+						<li class="social-item">
+							<a class="social-link" href="#"><img src="img/socialLogo1.svg" alt="vk ссылка" /></a>
+						</li>
+						<li class="social-item">
+							<a class="social-link" href="#"><img src="img/socialLogo2.svg" alt="vk ссылка" /></a>
+						</li>
+						<li class="social-item">
+							<a class="social-link" href="#"><img src="img/socialLogo3.svg" alt="vk ссылка" /></a>
+						</li>
+						<li class="social-item">
+							<a class="social-link" href="#"><img src="img/socialLogo4.svg" alt="vk ссылка" /></a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="footer__copy copy-foter">
+					<div class="copy-foter__text">&copy; 2017-2020 Технология машиностроения — описание сайта, о чём он. Все
+						права защищены </div>
+					<div class="copy-foter__poli">Политика конфиденциальности</div>
+				</div>
+
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/javascript.js"></script>
+</body>
+
+</html>
