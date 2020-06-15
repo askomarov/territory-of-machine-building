@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -23,10 +23,17 @@
 			<div class="container">
 				<div class="header-main">
 					<nav class="navbar navbar-expand-lg">
+
 						<div class="row navbar__content">
 							<!-- логотипа -->
 							<a class="navbar-brand" href="#"><img src="img/logo.svg" alt="логотип" /></a>
-							
+
+							<!-- бургер -->
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
 							<!-- соц меню -->
 							<ul class="header__social-menu">
 								<li class="social-item">
@@ -49,7 +56,7 @@
 										<a class="nav-link" href="#">Главная</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#popup">Новости</a>
+										<a class="nav-link" href="">Новости</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="#">Исследования</a>
@@ -58,33 +65,29 @@
 										<a class="nav-link" href="#">Аналитика</a>
 									</li>
 								</ul>
-							</div>
-							<!-- меню пользователя -->
-							<div class="header-user">
-								<div class="header-user__image">
-									<img src="img/userlogo.jpg" alt="user logo" />
-								</div>
+								<!-- меню пользователя -->
+								<div class="header-user">
+									<div class="header-user__image">
+										<img src="img/userlogo.jpg" alt="user logo" />
+									</div>
 
-								<ul class="header-user__menu">
-									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Валерия Шпак
-										</a>
-										<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-											<a class="dropdown-item" href="#">Мои статьи</a>
-											<a class="dropdown-item" href="#">Моя страница</a>
-											<a class="dropdown-item" href="#"><span>Выход</span></a>
-										</div>
-									</li>
-								</ul>
+									<ul class="header-user__menu">
+										<li class="nav-item dropdown">
+											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Валерия Шпак
+											</a>
+											<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+												<a class="dropdown-item" href="#">Мои статьи</a>
+												<a class="dropdown-item" href="#">Моя страница</a>
+												<a class="dropdown-item" href="#"><span>Выход</span></a>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<!-- бургер -->
-							<button class="navbar-toggler order-3" type="button" data-toggle="collapse"
-								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-								aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
+
+
 						</div>
 					</nav>
 
@@ -123,8 +126,8 @@
 			<div class="container">
 				<div class="row">
 					<!-- левый сайд бар -->
-					<div class="col-1 main-page__sidebar sidebar">
-						<nav class="sidebar__list nav flex-column">
+					<div class="col-md-1 main-page__sidebar sidebar">
+						<nav class="sidebar__list nav">
 							<a class="sidebar__link link-fb" href="#">fb</a>
 							<a class="sidebar__link link-tw" href="#">tw</a>
 							<a class="sidebar__link link-mail" href="#">ma</a>
@@ -250,11 +253,11 @@
 						</div>
 					</div>
 					<!-- правый сайдбар -->
-					<div class="col-10 col-md-3 main-page__top-news top-news">
+					<div class="col-12 col-md-3 main-page__top-news top-news">
 						<div class="top-news__body">
 							<div class="top-news__title">Топ статей автора</div>
 							<div class="top-news__images">
-								<img src="img/news1.jpg" alt="" />
+								<a href="#"><img src="img/news1.jpg" alt="" /></a>
 							</div>
 							<div class="top-news__text">
 								Высокое качество жизни для всех
@@ -268,60 +271,68 @@
 						</div>
 						<div class="top-news__articles articles">
 							<div class="articles__item">
-								<div class="articles__image">
-									<img src="img/news2.jpg" alt="" />
-								</div>
-								<div class="articles__title">
-									Являясь всего лишь частью
-								</div>
-								<nav aria-label="articles__crumb breadcrumb">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item"><a href="#">Категория</a></li>
-										<li class="breadcrumb-item active">1 марта 2020</li>
-									</ol>
-								</nav>
+								<a href="#">
+									<div class="articles__image">
+										<img src="img/news2.jpg" alt="" />
+									</div>
+									<div class="articles__title">
+										Являясь всего лишь частью
+									</div>
+									<nav aria-label="articles__crumb breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item"><a href="#">Категория</a></li>
+											<li class="breadcrumb-item active">1 марта 2020</li>
+										</ol>
+									</nav>
+								</a>
 							</div>
 							<div class="articles__item">
-								<div class="articles__image">
-									<img src="img/news3.jpg" alt="" />
-								</div>
-								<div class="articles__title">
-									Являясь всего лишь частью
-								</div>
-								<nav aria-label="articles__crumb breadcrumb">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item"><a href="#">Категория</a></li>
-										<li class="breadcrumb-item active">1 марта 2020</li>
-									</ol>
-								</nav>
+								<a href="#">
+									<div class="articles__image">
+										<img src="img/news3.jpg" alt="" />
+									</div>
+									<div class="articles__title">
+										Являясь всего лишь частью
+									</div>
+									<nav aria-label="articles__crumb breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item"><a href="#">Категория</a></li>
+											<li class="breadcrumb-item active">1 марта 2020</li>
+										</ol>
+									</nav>
+								</a>
 							</div>
 							<div class="articles__item">
-								<div class="articles__image">
-									<img src="img/news4.jpg" alt="" />
-								</div>
-								<div class="articles__title">
-									Являясь всего лишь частью
-								</div>
-								<nav aria-label="articles__crumb breadcrumb">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item"><a href="#">Категория</a></li>
-										<li class="breadcrumb-item active">1 марта 2020</li>
-									</ol>
-								</nav>
+								<a href="#">
+									<div class="articles__image">
+										<img src="img/news4.jpg" alt="" />
+									</div>
+									<div class="articles__title">
+										Являясь всего лишь частью
+									</div>
+									<nav aria-label="articles__crumb breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item"><a href="#">Категория</a></li>
+											<li class="breadcrumb-item active">1 марта 2020</li>
+										</ol>
+									</nav>
+								</a>
 							</div>
 							<div class="articles__item">
-								<div class="articles__image">
-									<img src="img/news5.jpg" alt="" />
-								</div>
-								<div class="articles__title">
-									Являясь всего лишь частью
-								</div>
-								<nav aria-label="articles__crumb breadcrumb">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item"><a href="#">Категория</a></li>
-										<li class="breadcrumb-item active">1 марта 2020</li>
-									</ol>
-								</nav>
+								<a href="#">
+									<div class="articles__image">
+										<img src="img/news5.jpg" alt="" />
+									</div>
+									<div class="articles__title">
+										Являясь всего лишь частью
+									</div>
+									<nav aria-label="articles__crumb breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item"><a href="#">Категория</a></li>
+											<li class="breadcrumb-item active">1 марта 2020</li>
+										</ol>
+									</nav>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -333,7 +344,7 @@
 			<div class="container-fluid">
 				<div class="container">
 					<div class="row">
-						<div class="col-8 offset-1">
+						<div class="col-md-8 col-12 offset-md-1">
 							<div class="author__content comment">
 								<div class="comment__image">
 									<img src="img/authorlogo1.jpg" alt="author logo" />
@@ -353,7 +364,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-8 offset-1">
+					<div class="col-md-8 offset-md-1">
 						<div class="row author__articles articles-author">
 							<a href="#" class="col-6 articles-author__link link-left">
 								<div class="articles-author__image">
@@ -476,7 +487,7 @@
 					<!-- логотипа -->
 					<a class="navbar-brand" href="#"><img src="img/logo.svg" alt="логотип" /></a>
 					<!-- главное меню -->
-					<div class="footer__menu col-5">
+					<div class="footer__menu col-md-5">
 						<ul class="footer__menu-list navbar-nav">
 							<li class="nav-item">
 								<a class="nav-link" href="#">Главная</a>
@@ -493,7 +504,7 @@
 						</ul>
 					</div>
 					<!-- соц меню -->
-					<ul class="footer__social-menu col-2">
+					<ul class="footer__social-menu col-md-2">
 						<li class="social-item">
 							<a class="social-link" href="#"><img src="img/socialLogo1.svg" alt="vk ссылка" /></a>
 						</li>
