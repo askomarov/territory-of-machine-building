@@ -1346,6 +1346,11 @@ header {
   }
 }
 
+.footer .navbar-brand {
+  position: relative;
+  z-index: 5;
+}
+
 @media (max-width: 767px) {
   .footer .navbar-brand {
     margin: 0 auto;
@@ -1514,6 +1519,7 @@ header {
     width: 100%;
     height: 100%;
     z-index: 10;
+    overflow: auto;
   }
 }
 
@@ -1537,7 +1543,7 @@ header {
 }
 
 body.lock {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .out {
